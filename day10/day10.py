@@ -79,7 +79,7 @@ def find_all_valid_trails(grid, trail_heads):
 
 def main():
     with open("./day10/input") as file:
-        grid = [[int(element) if element != '.' else -1 for element in list(line.rstrip())] for line in file]
+        grid = [[int(element) if element != '.' else ' ' for element in list(line.rstrip())] for line in file]
     
     # Find the different trail heads
     trail_heads = find_all_trail_heads(grid)
